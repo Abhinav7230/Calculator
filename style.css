@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #080808e0;
+    margin: 0;
+}
+.calculator {
+    height: 80vh;
+    width: 350px;
+    background-color: #17181A;
+    border-radius: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    
+}
+.display{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.expression-display {
+    margin-right: 10px;
+    font-size: 2.5em;
+    width: 80%;
+    text-align: right;
+    border: none;
+    background: none;
+    color: rgb(133, 132, 132);
+    outline: none;
+}
+
+.display-input {
+    margin-right: 10px;
+    font-size: 3.5em;
+    width: 80%;
+    text-align: right;
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(243, 243, 243);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 60%;
+}
+.button-double{
+    grid-column: span 2;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    background-color: #505050;
+    border-radius: 50px;
+    width: 150px;
+    height: 60px;
+    border: none;
+    outline: none;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: #505050;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-weight: 700;
+}
+.modes{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.mode{
+    background: none;
+    border: none;
+    outline: none;
+width: 40px;
+height: 40px;
+}
+.button-orange{
+    background-color: #FF9500;
+}
+.button-grey{
+    background-color: #D4D4D2;
+    color: black;
+}
+
+body.bright-mode {
+    background-color: #5d5e5e;
+    color: rgb(216, 212, 212);
+
+}
+
+body.bright-mode .calculator {
+    background-color: #ffffff;
+    color: #000;
+}
+
+body.bright-mode .expression-display {
+    color: #666;
+}
+
+body.bright-mode .display-input {
+    color: #000;
+}
+
+body.bright-mode .button {
+    background-color: #505050;
+    color: rgb(216, 212, 212);
+}
+
+body.bright-mode .button-orange {
+    background-color: #FF9500;
+    color: rgb(238, 236, 236);
+}
+
+body.bright-mode .button-grey {
+    background-color: #aaaaaa;
+    color: #000;
+}
