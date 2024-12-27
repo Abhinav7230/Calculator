@@ -45,31 +45,24 @@ function calculate() {
 }
 
 
-// Select the "Mode" button
 const modeToggleButton = document.getElementById('modeToggle');
 const svgElement = document.getElementById('dark-mode');
 
-// Add a click event listener
 modeToggleButton.addEventListener('click', () => {
-    // Check if the body already has the 'bright-mode' class
     if (document.body.classList.contains('bright-mode')) {
-        // If it does, remove the 'bright-mode' class (switch to dark mode)
         document.body.classList.remove('bright-mode');
     } else {
-        // If it doesn't, add the 'bright-mode' class (switch to bright mode)
         document.body.classList.add('bright-mode');
     }
 });
 
 
-// Toggle the appearance of the SVG when the button is clicked
 modeToggleButton.addEventListener('click', () => {
-  // Check the current mode by the `fill` attribute of the SVG
   const isLightMode = svgElement.getAttribute('fill') === 'white';
 
   if (isLightMode) {
-    svgElement.setAttribute('fill', 'black'); // Change to black for light mode
+    svgElement.setAttribute('fill', 'black');
   } else {
-    svgElement.setAttribute('fill', 'white'); // Change to white for dark mode
+    svgElement.setAttribute('fill', 'white');
   }
 });
